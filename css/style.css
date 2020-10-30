@@ -71,7 +71,7 @@
     text-align: center;
     vertical-align: middle;
     position: relative;
-    top: -160px;
+    top: 110px;
     left: 65px;
 }
 
@@ -88,6 +88,10 @@
     opacity: 0.6;
     position: absolute;
     top: 326px;
+}
+
+.effects :hover {
+
 }
 
 .names {
