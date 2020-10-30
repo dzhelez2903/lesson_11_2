@@ -58,7 +58,6 @@ body {
 }
 
 .cards {
-    display: inline-block;
     width: 269px;
     height: 268px;
 }
