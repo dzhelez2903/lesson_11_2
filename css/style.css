@@ -17,8 +17,12 @@
     src: url('../fonts/LatoLight.woff') format('woff');
 }
 
+body {
+    background-color: #f6f6f6;
+}
+
 .container_big {
-    max-width: 1600px;
+    max-width: 1170px;
     background: url(../img/line.png) repeat-y;
     margin: 0 auto;
 }
@@ -45,7 +49,7 @@
 
 .container {
     display: flex;
-    max-width: 1168px;
+    max-width: 1170px;
     margin: 0 auto;
     justify-content: space-between;
     margin-top: 60px;
@@ -56,11 +60,10 @@
     width: 269px;
     height: 268px;
     margin-bottom: 25px;
-    padding-right: 1.5px;
 }
 
-.cards :hover {
- opacity: 0;
+.cards:hover {
+    opacity: 0;
 }
 
 .social_network {
@@ -73,12 +76,13 @@
     position: relative;
     top: 110px;
     left: 65px;
+    z-index: 100;
 }
 
-.social_network :hover {
+.social_network:hover {
     background-color: black;
     transition: all 0.4s linear;
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
 }
 
 .effects {
@@ -88,10 +92,11 @@
     opacity: 0.6;
     position: absolute;
     top: 326px;
+    display: none;
 }
 
-.effects :hover {
-
+.cards:hover+.effects {
+    display: block;
 }
 
 .names {
