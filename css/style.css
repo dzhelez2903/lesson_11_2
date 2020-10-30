@@ -1,4 +1,6 @@
-* {
+*,
+div,
+body {
     margin: 0;
     padding: 0;
 }
@@ -59,47 +61,52 @@ body {
     display: inline-block;
     width: 269px;
     height: 268px;
-    margin-bottom: 25px;
 }
 
 .cards:hover {
-    opacity: 0;
+    background-image: none;
+    background-color: #18b5dc;
+    opacity: 0.6;
 }
 
-.social_network {
+.cards:hover a {
     display: inline-block;
     width: 43px;
     height: 43px;
     background-color: #5ecbe7;
-    text-align: center;
-    vertical-align: middle;
     position: relative;
     top: 110px;
     left: 65px;
-    z-index: 100;
 }
 
-.social_network:hover {
+.cards a {
+    display: none;
+}
+
+.cards a:hover {
     background-color: black;
     transition: all 0.4s linear;
     transform: scale(1.1, 1.1);
 }
 
-.effects {
-    width: 269px;
-    height: 268px;
-    background-color: #18b5dc;
-    opacity: 0.6;
-    position: absolute;
-    top: 326px;
-    display: none;
+.img1 {
+    background-image: url(../img/Elon_Reeve_Musk.png);
 }
 
-.cards:hover+.effects {
-    display: block;
+.img2 {
+    background-image: url(../img/Alex_Cutter.png);
+}
+
+.img3 {
+    background-image: url(../img/Elena_Simpson.png);
+}
+
+.img4 {
+    background-image: url(../img/Lily_Allen.png);
 }
 
 .names {
+    margin-top: 25px;
     margin-bottom: 115px;
 }
 
